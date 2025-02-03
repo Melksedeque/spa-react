@@ -1,0 +1,29 @@
+nav.menu a.menu__item {
+  color: var(--cor-fonte-principal);
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: 5px;
+  transition: all 0.25s ease;
+}
+
+nav.menu a.menu__item:hover {
+  transform: scale(1.1);
+}
+
+nav.menu a.menu__item.destacado {
+  position: relative;
+}
+nav.menu a.menu__item.destacado::after {
+  background-color: var(--cor-fonte-principal);
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 25px;
+}
+
+nav.menu a.menu__item.destacado {
+  transform: scale(1.1);
+}
