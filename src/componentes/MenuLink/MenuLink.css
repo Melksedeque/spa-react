@@ -10,10 +10,10 @@ nav.menu a.menu__item:hover {
   transform: scale(1.1);
 }
 
-nav.menu a.menu__item.destacado {
+nav.menu a.menu__item.active {
   position: relative;
 }
-nav.menu a.menu__item.destacado::after {
+nav.menu a.menu__item.active::after {
   background-color: var(--cor-fonte-principal);
   bottom: 0;
   content: "";
@@ -24,6 +24,6 @@ nav.menu a.menu__item.destacado::after {
   width: 25px;
 }
 
-nav.menu a.menu__item.destacado {
+nav.menu a.menu__item.active {
   transform: scale(1.1);
 }
