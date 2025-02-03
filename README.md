@@ -1,4 +1,4 @@
-# Imersão Front-End Alura - Página do Spotify
+# SPA em React - Sobre mim
 
 ![Tela Principal](./screenshot/tela-principal.png)
 
