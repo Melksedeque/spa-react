@@ -2,13 +2,17 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Inicio from "./paginas/Inicio";
 import SobreMim from "./paginas/SobreMim";
+import Contato from "./paginas/Contato";
+import Menu from "./componentes/Menu";
 
 function App() {
   return (
     <BrowserRouter>
+      <Menu />
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/sobremim" element={<SobreMim />} />
+        <Route path="/contato" element={<Contato />} />
         <Route path="*" element={<h1>Página não encontrada</h1>} />
       </Routes>
     </BrowserRouter>
