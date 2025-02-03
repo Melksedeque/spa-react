@@ -6,7 +6,7 @@ export default function MenuLink({ children, to }) {
     <NavLink
       to={to}
       className={({ isActive }) =>
-        isActive ? [styles.menu__item, styles.active] : styles.menu__item
+        isActive ? `${styles.menu_item} ${styles.active}` : styles.menu_item
       }
     >
       {children}

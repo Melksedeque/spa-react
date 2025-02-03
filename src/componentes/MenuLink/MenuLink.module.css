@@ -1,4 +1,4 @@
-nav.menu a.menu__item {
+.menu_item {
   color: var(--cor-fonte-principal);
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -6,14 +6,14 @@ nav.menu a.menu__item {
   transition: all 0.25s ease;
 }
 
-nav.menu a.menu__item:hover {
+.menu_item:hover {
   transform: scale(1.1);
 }
 
-nav.menu a.menu__item.active {
+.menu_item.active {
   position: relative;
 }
-nav.menu a.menu__item.active::after {
+.menu_item.active::after {
   background-color: var(--cor-fonte-principal);
   bottom: 0;
   content: "";
@@ -24,6 +24,6 @@ nav.menu a.menu__item.active::after {
   width: 25px;
 }
 
-nav.menu a.menu__item.active {
+.menu_item.active {
   transform: scale(1.1);
 }
