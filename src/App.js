@@ -1,13 +1,11 @@
 import "./App.css";
+import Inicio from "./paginas/Inicio";
+import SobreMim from "./paginas/SobreMim";
+
+const pagina = window.location.pathname === "/" ? <Inicio /> : <SobreMim />;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Olá, Mundo!</h1>
-      </header>
-    </div>
-  );
+  return pagina;
 }
 
 export default App;
