@@ -6,21 +6,6 @@ nav.menu {
   height: 112px;
 }
 
-nav.menu a.menu__item {
-  color: var(--cor-fonte-principal);
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  transition: all 0.25s ease;
-}
-
-nav.menu a.menu__item:hover {
-  transform: scale(1.1);
-}
-
-nav.menu a.menu__item.destacado {
-  text-decoration: underline;
-}
-
 @media screen and (max-width: 744px) {
   nav.menu {
     height: 72px;
