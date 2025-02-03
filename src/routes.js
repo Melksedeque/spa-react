@@ -4,6 +4,7 @@ import Inicio from "./paginas/Inicio";
 import SobreMim from "./paginas/SobreMim";
 import Contato from "./paginas/Contato";
 import Menu from "./componentes/Menu";
+import Rodape from "componentes/Rodape";
 
 function AppRoutes() {
   return (
@@ -15,6 +16,7 @@ function AppRoutes() {
         <Route path="/contato" element={<Contato />} />
         <Route path="*" element={<h1>Página não encontrada</h1>} />
       </Routes>
+      <Rodape />
     </BrowserRouter>
   );
 }
