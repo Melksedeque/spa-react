@@ -5,6 +5,7 @@
   gap: 1.5rem;
   margin-top: -2.5rem;
   padding: 0 6vw 3.625rem;
+  position: relative;
 }
 
 @media (max-width: 1100px) {
