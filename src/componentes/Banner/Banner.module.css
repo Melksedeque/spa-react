@@ -1,16 +1,22 @@
 .banner {
-  padding: 3rem 7.5rem 6.25rem;
+  align-items: center;
   background-color: var(--azul-escuro);
   color: var(--branco);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 3rem 10rem;
+  position: relative;
+}
+
+.banner_apresentacao {
+  flex: 1;
 }
 
 .banner_titulo {
   font-family: var(--fonte-secundaria);
   font-size: 4rem;
-  margin-top: 5rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 1rem;
 }
 
 .banner_subtitulo {
@@ -23,27 +29,71 @@
   font-family: var(--fonte-secundaria);
   font-size: 1.5rem;
   line-height: 2rem;
-  margin-bottom: 2rem;
 }
 
 .banner_imagens {
+  flex: 1;
+  height: 500px;
   position: relative;
-  height: 406px;
 }
 
 .banner_imagens > .minhaFoto {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 18vw;
   border-radius: 50%;
+  bottom: -3vh;
+  position: absolute;
+  right: 0vw;
+  width: 16vw;
 }
 
 .banner_imagens > .circuloColorido {
+  bottom: 0vw;
   position: absolute;
-  right: 7vw;
-  bottom: 2.2vw;
+  right: 10vw;
   width: 25vw;
+}
+
+@media (max-width: 1600px) {
+  .banner_imagens > .minhaFoto {
+    bottom: -2vh;
+    width: 20vw;
+  }
+
+  .banner_imagens > .circuloColorido {
+    right: 10vw;
+    width: 30vw;
+  }
+}
+
+@media (max-width: 1450px) {
+  .banner_imagens > .minhaFoto {
+    bottom: -2vh;
+    width: 20vw;
+  }
+
+  .banner_imagens > .circuloColorido {
+    bottom: 4vh;
+    right: 10vw;
+    width: 30vw;
+  }
+}
+
+@media (max-width: 1300px) {
+  .banner_apresentacao {
+    padding-right: 20px;
+  }
+
+  .banner_imagens > .minhaFoto {
+    bottom: 0;
+    width: 20vw;
+  }
+
+  .banner_imagens > .circuloColorido {
+    bottom: auto;
+    top: 0;
+    right: auto;
+    left: 0;
+    width: 30vw;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -66,7 +116,7 @@
   }
 
   .banner_imagens {
-    height: 338px;
+    height: 420px;
   }
 
   .banner_imagens > .minhaFoto {
@@ -79,18 +129,26 @@
   }
 }
 
-@media (max-width: 744px) {
+@media (max-width: 770px) {
   .banner {
-    padding: 2rem 1rem;
+    padding: 2rem;
     display: block;
   }
 
+  .banner_apresentacao {
+    padding: 0;
+    text-align: center;
+  }
+
   .banner_titulo {
-    margin-bottom: 0.5rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    margin: 0;
   }
 
   .banner_subtitulo {
-    margin-bottom: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1.75rem;
   }
 
   .banner_texto {
@@ -109,12 +167,12 @@
   }
 
   .banner_imagens > .minhaFoto {
-    width: 170px;
-    transform: translate(5rem, 0px);
+    width: 200px;
+    transform: translate(4rem, 0px);
   }
 
   .banner_imagens > .circuloColorido {
-    width: 240px;
+    width: 280px;
     transform: translate(-1.5rem, 0px);
   }
 }
