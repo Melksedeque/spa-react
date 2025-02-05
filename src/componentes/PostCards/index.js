@@ -1,6 +1,6 @@
-import styles from "./Post.module.css";
+import styles from "./PostCards.module.css";
 
-export default function Post({ post }) {
+export default function PostCards({ post }) {
   return (
     <div className={styles.post}>
       <img
