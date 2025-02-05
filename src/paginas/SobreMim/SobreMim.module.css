@@ -1,8 +1,18 @@
-.fotoSobreMim {
+figure.figureSobreMim {
   margin-bottom: 0.5rem;
   margin-left: 1.5rem;
-  width: 40vw;
   float: right;
+  width: 40vw;
+}
+.fotoSobreMim {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.captionFotoSobreMim {
+  font-style: italic;
+  margin-top: 5px;
+  text-align: center;
 }
 
 .subtitulo {
@@ -18,7 +28,7 @@
 }
 
 @media (max-width: 1100px) {
-  .fotoSobreMim {
+  figure.figureSobreMim {
     float: none;
     display: block;
     margin: 0 auto 2rem;
@@ -31,7 +41,7 @@
 }
 
 @media (max-width: 744px) {
-  .fotoSobreMim {
+  figure.figureSobreMim {
     width: 100%;
   }
 
