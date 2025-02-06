@@ -15,7 +15,7 @@ export default function NaoEncontrada() {
           inicial.
         </p>
         <div className={styles.botaoContainer}>
-          <button>Voltar</button>
+          <button className={styles.btnVoltar}>Voltar</button>
         </div>
         <figure>
           <img
