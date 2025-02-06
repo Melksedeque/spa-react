@@ -1,5 +1,9 @@
 import styles from "./BotaoPrincipal.module.css";
 
-export default function BotaoPrincipal({ children }) {
-  return <button className={styles.botaoPrincipal}>{children}</button>;
+export default function BotaoPrincipal({ children, size }) {
+  return (
+    <button className={`${styles.botaoPrincipal} ${styles[size]}`}>
+      {children}
+    </button>
+  );
 }
