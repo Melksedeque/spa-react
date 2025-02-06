@@ -1,10 +1,31 @@
 import styles from "./NaoEncontrada.module.css";
+import imagemErro404 from "assets/erro_404.png";
 
 export default function NaoEncontrada() {
   return (
-    <div className={styles.container}>
-      <h1>Erro 404</h1>
-      <p>Página não encontrada</p>
-    </div>
+    <>
+      <div className={styles.conteudoContainer}>
+        <span className={styles.texto404}>Erro 404</span>
+        <h1 className={styles.titulo}>Ops! Página não encontrada!</h1>
+        <p className={styles.paragrafo}>
+          Tem certeza de que era isso que você estava procurando?
+        </p>
+        <p className={styles.paragrafo}>
+          Aguarde uns instantes e recarregue a página, ou volte para a página
+          inicial.
+        </p>
+        <div className={styles.botaoContainer}>
+          <button>Voltar</button>
+        </div>
+        <figure>
+          <img
+            className={styles.imagemCachorro}
+            src={imagemErro404}
+            alt="Cachorro de óculos vestido como humano"
+          />
+        </figure>
+      </div>
+      <div className={styles.espacoEmBranco}></div>
+    </>
   );
 }
