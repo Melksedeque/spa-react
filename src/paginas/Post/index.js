@@ -10,6 +10,14 @@ export default function Post() {
     return post.id === Number(params.id);
   });
 
+  if (!post) {
+    return (
+      <div className="post">
+        <h2>Post não encontrado</h2>
+      </div>
+    );
+  }
+
   return (
     <div className="post">
       <PostModelo
