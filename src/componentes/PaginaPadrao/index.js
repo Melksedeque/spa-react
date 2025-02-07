@@ -8,6 +8,7 @@ export default function PaginaPadrao({ children }) {
       <Banner />
       <div className={styles["pagina-padrao"]}>
         <Outlet />
+        {children}
       </div>
     </main>
   );
