@@ -19,7 +19,7 @@ function AppRoutes() {
           <Route path="sobremim" element={<SobreMim />} />
           <Route path="contato" element={<Contato />} />
         </Route>
-        <Route path="posts/:id" element={<Post />} />
+        <Route path="posts/:id/*" element={<Post />} />
         <Route path="*" element={<NaoEncontrada />} />
       </Routes>
       <Rodape />
