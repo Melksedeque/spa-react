@@ -1,0 +1,70 @@
+.subtitulo {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.contato {
+  padding: 3rem 0 6rem;
+}
+
+.contato figure {
+  display: block;
+  float: left;
+  margin: 0 1rem 0 0;
+}
+
+.contato figure img {
+  border-radius: 50%;
+}
+
+.contato figure figcaption {
+  display: none;
+}
+
+.contato p {
+  font: normal 1rem/1.5rem var(--fonte-principal);
+}
+
+.contato p a {
+  color: var(--azul-medio);
+  transition: all 0.25s ease;
+}
+
+.contato p a:hover {
+  color: var(--azul-escuro);
+}
+
+.contato p strong {
+  font-weight: 700;
+}
+
+.redesSociaisContainer {
+  margin-top: 1rem;
+}
+
+.redesSociaisContainer ul.midiasSociais {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.redesSociaisContainer ul.midiasSociais li a {
+  transition: all 0.25s ease;
+}
+
+.redesSociaisContainer ul.midiasSociais li a[href*="instagram.com"]:hover {
+  color: #e1306c;
+}
+.redesSociaisContainer ul.midiasSociais li a[href*="x.com"]:hover {
+  color: #14171a;
+}
+.redesSociaisContainer ul.midiasSociais li a[href*="github.com"]:hover {
+  color: #24292e;
+}
+.redesSociaisContainer ul.midiasSociais li a[href*="linkedin.com"]:hover {
+  color: #0e76a8;
+}
+.redesSociaisContainer ul.midiasSociais li a[href*="whatsapp.com"]:hover {
+  color: #25d366;
+}
