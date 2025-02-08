@@ -33,7 +33,7 @@ export default function Post() {
           </div>
         </PostModelo>
       </div>
-      <PostsRecomendados posts={posts} />
+      <PostsRecomendados estePost={post.id} />
     </PaginaPadrao>
   );
 }
