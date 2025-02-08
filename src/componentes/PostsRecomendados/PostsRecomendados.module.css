@@ -9,6 +9,6 @@
 }
 
 .PostsRecomendadosContainer ul {
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
 }
