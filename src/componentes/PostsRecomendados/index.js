@@ -6,7 +6,7 @@ export default function PostsRecomendados({ estePost }) {
     <div className={styles.PostsRecomendadosContainer}>
       <h2 className={styles.tituloSecao}>Outros posts que você pode gostar:</h2>
       <div className={styles.PostsRecomendados}>
-        <Inicio postsRecomendados={true} limite={4} exceto={estePost} />
+        <Inicio limite={5} exceto={estePost} />
       </div>
     </div>
   );
