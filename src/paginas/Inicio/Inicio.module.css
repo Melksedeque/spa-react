@@ -8,6 +8,19 @@
   position: relative;
 }
 
+.semPosts {
+  padding: 3.625rem 6vw;
+}
+.semPosts p {
+  background: #f8d7da;
+  border: 1px solid #f1aeb5;
+  border-radius: 0.5rem;
+  color: #58151c;
+  display: block;
+  font: 700 1.5rem var(--fonte-secundaria);
+  padding: 2rem;
+}
+
 @media (max-width: 1100px) {
   .posts {
     margin-top: 0;
