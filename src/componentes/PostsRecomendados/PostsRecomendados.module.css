@@ -1,0 +1,14 @@
+.PostsRecomendadosContainer {
+  padding: 0rem 7.5rem 4.5rem;
+}
+
+.PostsRecomendadosContainer h2.tituloSecao {
+  font: 700 2.5rem var(--fonte-secundaria);
+  line-height: 5rem;
+  margin: 0 0 80px;
+}
+
+.PostsRecomendadosContainer ul {
+  justify-content: space-between;
+  padding: 0;
+}
