@@ -1,6 +1,6 @@
 # SPA em React - Sobre mim
 
-Este projeto é uma Single Page Application (SPA) em React que serve como um site pessoal e blog. O site inclui informações sobre o autor, uma seção de blog com posts, e uma página de contato.
+Apresento meu espaço digital: uma Single Page Application (SPA) construída com React para funcionar como meu site pessoal e plataforma de blog. Aqui você encontrará informações sobre mim, poderá explorar meus pensamentos e ideias através dos posts do blog, e entrar em contato diretamente.
 
 ![Tela Principal](./screenshot/tela-principal.png)
 
